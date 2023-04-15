@@ -1,0 +1,30 @@
+package com.core_java.exceptionhandling;
+
+/**
+ * 
+ * @author sumit
+ * 
+ * --> If you want to create you own exception then, create a class and extends excpetion class
+ *
+ */
+
+class MyException extends Exception{ 
+	
+}
+
+public class OwnException {
+
+	public static void main(String[] args) {
+
+		int i =0;
+		int j=0;
+		
+		try {
+			j = 18/i;
+				throw new MyException();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

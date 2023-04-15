@@ -1,0 +1,21 @@
+package com.core_java;
+
+public class WrapperClasses {
+
+	public static void main(String[] args) {
+
+		int a = 19; // primitive data type
+		Integer i = 19;// Object type //package--> class java.lang.Integer
+		
+//		System.out.println("P : "+a+ ", " + "obj : "+ i.getClass());
+		
+		Integer i1 = new Integer(a);
+//		System.out.println(i1+ " " + i1.getClass()); // It's object type and it's called autoBoxing
+		Integer i2 = a; 
+		System.out.println(i2.getClass()); // we can also do like this
+		
+		
+		int a1 = i1;
+	}
+
+}

@@ -1,0 +1,11 @@
+var keyword in Java : -->But in actually in java var is not a keyword
+	The var keyword was introduced in Java 10. Type inference is used in var keyword in which it detects automatically the datatype of a variable based on the surrounding context. 
+	Examples explain where var is used and also where you can’t use it.
+	
+	
+	
+	
+	
+	
+	
+	

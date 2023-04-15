@@ -1,0 +1,15 @@
+package com.core_java;
+
+public class StringInternMethod {
+
+	public static void main(String[] args) {
+
+		String s1 = new String("sumit");
+		String s2 = new String("sumit");
+		System.out.println(s1==s2); 
+		/**
+		 * false (because we are creating a String object with the help of new-keyword
+		 */
+	}								
+
+}

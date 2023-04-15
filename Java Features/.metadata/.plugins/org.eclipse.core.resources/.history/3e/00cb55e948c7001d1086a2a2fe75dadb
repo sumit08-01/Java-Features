@@ -1,0 +1,26 @@
+package com.core_java;
+
+class Employee{
+	String name;
+	static int age;
+	
+	//initializer block -->> This block is use to initialized to instance member of class
+	{
+		name = "sumit";
+		age = 21;
+		System.out.println("Initialozer Block");
+	}
+}
+
+public class StaticKeyWord {
+
+	public static void main(String[] args) {
+		Employee employee = new Employee();
+		System.out.println("Main");
+		System.out.println(employee.name);
+		System.out.println(employee.age);
+		
+		
+	}
+
+}

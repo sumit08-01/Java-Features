@@ -1,0 +1,45 @@
+package com.core_java;
+
+abstract class NoName{
+	abstract public void show() ;
+	abstract public void music() ;
+	
+}
+
+public class AbstractAnonymousInnerClass {
+
+	public static void main(String[] args) {
+		NoName name = new NoName() {
+			
+			@Override
+			public void show() {
+				System.out.println("Show method of NoName of abstract class");
+			}
+			
+			@Override
+			public void music() {
+				System.out.println("playing music method of NoName of abstract class");
+			}
+		};
+		
+		name.music();
+		name.show();
+		
+		/**
+		 * As we know we can't create object of main class,
+		 * The main reason why we cannot create an object of an abstract class in Java is that 
+		 * it doesn't make sense to create an object of a class that has no implementation for 
+		 * one or more of its methods. Since an abstract class is incomplete, it cannot be instantiated,
+		 * meaning we cannot create objects of that class.
+		 * 
+		 * --> You are correct, in Java, we can create objects of an abstract class using anonymous classes. 
+		 * An anonymous class is a local class that does not have a name and is defined within a method or 
+		 * code block. Anonymous classes are often used to provide implementation for interfaces or abstract classes.
+		 * 
+		 * --> In summary, we can create an object of an abstract class using anonymous classes by extending 
+		 * the abstract class and providing an implementation for the abstract methods in the anonymous class.
+		 * 
+		 */
+	}
+
+}

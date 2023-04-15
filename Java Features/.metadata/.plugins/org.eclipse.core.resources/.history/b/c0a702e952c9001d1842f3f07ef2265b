@@ -1,0 +1,16 @@
+package com.core_java;
+
+import java.io.IOException;
+
+public class InputThroughUser {
+
+	public static void main(String[] args) throws IOException {
+
+		System.out.println("Enter a number");
+		int num = System.in.read(); // System.in.read();-->> It's give the ASCIA value of your character, and it only give a single cahracter
+		System.out.println(num); 
+		System.out.println(num-48); 
+		
+	}
+
+}

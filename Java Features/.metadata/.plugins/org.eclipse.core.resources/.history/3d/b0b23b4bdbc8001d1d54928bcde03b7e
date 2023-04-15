@@ -1,0 +1,13 @@
+package com.core_java;
+
+abstract class NoName{
+	abstract public void show() ;
+}
+
+public class AbstractAnonymousInnerClass {
+
+	public static void main(String[] args) {
+
+	}
+
+}

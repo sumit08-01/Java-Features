@@ -1,0 +1,30 @@
+package com.core_java;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+
+public class InputThroughUser {
+
+	public static void main(String[] args) throws IOException {
+
+		System.out.println("Enter a number");
+//		int num = System.in.read(); // System.in.read();-->> It's give the ASCIA value of your character, 
+//		System.out.println(num); 
+//		System.out.println(num-48); // for 2 is 2
+//		System.out.println(num-48); // for 55 is 5 -->>  it only give a single cahracter
+		
+		
+		// using Buffer reader
+		
+		
+		InputStreamReader in = new InputStreamReader(System.in);
+		BufferedReader bf = new BufferedReader(in);
+		int read = bf.read();
+		System.out.println(read);
+		
+	}
+
+}

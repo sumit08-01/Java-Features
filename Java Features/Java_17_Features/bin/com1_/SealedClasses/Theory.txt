@@ -1,0 +1,4 @@
+Sealed Classes : -->> 
+	it's introduced in java 15 but as a Preview and in 16 also as a preview
+	
+	Now in java 17 it's finalized(standardized)

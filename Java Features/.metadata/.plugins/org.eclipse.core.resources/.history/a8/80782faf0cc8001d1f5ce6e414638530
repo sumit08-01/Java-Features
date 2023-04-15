@@ -1,0 +1,36 @@
+package com.core_java;
+
+class cal{
+	public int add(int a , int b) {
+		return a+b;
+	}
+	public int sub(int a , int b) {
+		return a-b;
+	}
+}
+class AddvanceCal{
+	public int mul(int a , int b) {
+		return a*b;
+	}
+	public int div(int a , int b) {
+		return a/b;
+	}
+}
+
+
+
+public class Inheratance_OOPS {
+
+	public static void main(String[] args) {
+		AddvanceCal addvanceCal = new AddvanceCal();
+		int mul = addvanceCal.mul(3, 4);
+		int div = addvanceCal.div(10, 5);
+		cal cal = new cal();
+		int add = cal.add(2, 4);
+		int sub = cal.sub(5, 4);
+		System.out.println("Add : "+ add + " Sub : "+ sub);
+		cal.mul(3,5);// This line giving compile time error because mul method is not present in Cal Class That's why
+		System.out.println("Mul : "+ mul + " Div : "+ div);
+	}
+
+}

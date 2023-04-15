@@ -1,0 +1,33 @@
+package com.core_java;
+
+abstract class Car {
+	abstract public void drive(); // with the help of abstract keyword we can make a abstract method
+	/**
+	 * Abstract method mean we can only declare a method not defining the method
+	 * Abstract methods only define in abstract class
+	 * And we can not create the Object of abstract class, but we can make reference of abstract class
+	 */
+	public void music() {
+		System.out.println("Playing Music");
+	}
+}
+
+class Neno extends Car{
+	public void drive() {
+		System.out.println("Nano Drive ");
+	};
+}
+
+public class AbstractClass {
+
+	public static void main(String[] args) {
+
+//		Car car = new Car() ;// can no create object of abstract class
+		Car car = new Neno();
+		car.drive();
+		car.music();
+			
+		
+	}
+
+}

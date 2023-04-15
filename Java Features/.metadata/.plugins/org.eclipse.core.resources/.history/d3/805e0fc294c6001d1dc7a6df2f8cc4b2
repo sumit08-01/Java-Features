@@ -1,0 +1,34 @@
+package com.core_java;
+
+public class String_Buffer_Builder {
+
+	public static void main(String[] args) {
+
+		//Question
+//		String name = new String();
+//		name = "sumit";
+//		String name1 = "sumit";
+//		System.out.println(name==name1);
+		
+		
+		//String -->> Imuttable
+//		String s = new String("sumit");
+//		String s1 = "sumit";
+//		System.out.println(s==s1);
+//		System.out.println(s.equals(s1));
+		
+		//String Buffer -->> Mutable
+		StringBuffer buffer = new StringBuffer("sumit");
+//		StringBuffer bu = "sumit"; // This line giving a error because we can't assign value StringBuffer like this;
+//		String bu = "sumit"; 
+//		String bu1 = new String("sumit");
+//		System.out.println(buffer == bu);//give error
+//		System.out.println(buffer == bu1); //give error   Incompatible operand types StringBuffer and String
+		
+		System.out.println(buffer.capacity()); // Inital capacity -> 16
+		
+		
+		
+	}
+
+}

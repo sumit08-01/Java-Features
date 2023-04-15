@@ -1,0 +1,24 @@
+package com.core_java;
+
+
+class A1 {
+	public void show() {
+		System.out.println("A Class show method called");
+	}
+}
+class B1 extends A1{
+	public void show() {
+		System.out.println("B Class show method called");
+	}
+}
+
+public class DynamicDispatcher_OOPS {
+
+	public static void main(String[] args) {
+		
+		A1 a = new A1();
+		a.show();
+		
+	}
+
+}

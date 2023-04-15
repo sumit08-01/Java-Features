@@ -1,0 +1,37 @@
+package com.core_java;
+
+
+class A1 {
+	public void show() {
+		System.out.println("A Class show method called");
+	}
+}
+class B1 extends A1{
+	public void show() {
+		System.out.println("B Class show method called");
+	}
+}
+class C1 extends B1{
+	public void show() {
+		System.out.println("C Class show method called");
+	}
+}
+
+public class DynamicDispatcher_OOPS {
+
+	public static void main(String[] args) {
+		
+		A1 a = new A1(); // we can write before
+		a.show();
+		
+		a = new B1();  // here reference of a but object of B, This called dynamic dispatcher
+		a.show();		// we can store object of child class in reference of parent
+		
+		
+		C1 c1 = new C1();
+		c1.show();
+		
+		
+	}
+
+}

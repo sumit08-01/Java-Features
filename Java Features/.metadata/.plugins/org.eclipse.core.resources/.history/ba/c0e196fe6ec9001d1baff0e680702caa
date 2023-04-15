@@ -1,0 +1,46 @@
+package com.core_java.thread;
+
+class Counter {
+
+	int count;
+	public void Increment() {
+		count++;
+	}
+}
+
+public class RaceCondition {
+
+	public static void main(String[] args) {
+		Counter c = new Counter();
+		
+		Runnable a = new Runnable() {
+			@Override
+			public void run() {
+				for(int i=0; i<1000; i++) {
+					c.Increment();
+				}
+			}
+		};
+		
+		
+		Runnable b = new Runnable() {
+			
+			@Override
+			public void run() {
+				for(int i=0; i<1000; i++) {
+					c.Increment();
+				}
+				
+			}
+		};
+		
+		Thread threada = new Thread(a);
+		Thread threadb = new Thread(b);
+		
+		threada.start();
+		threadb.start();
+		
+		System.out.println(c.count);
+	}
+
+}

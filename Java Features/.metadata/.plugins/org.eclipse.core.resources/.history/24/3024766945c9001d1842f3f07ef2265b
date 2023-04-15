@@ -1,0 +1,20 @@
+package com.core_java.exceptionhandling;
+
+public class Exceptionhandling {
+
+	public static void main(String[] args) {
+
+		int i =9;
+		int j=0;
+		
+		try {
+			j = 18/i;
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("Exception occured");
+		}
+		System.out.println(j);
+		System.out.println("bye");
+	}
+
+}

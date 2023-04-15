@@ -1,0 +1,24 @@
+package com.core_java.thread;
+
+class A {
+	public void show() {
+		System.out.println("Hii");
+	}
+}
+class B {
+	public void show() {
+		System.out.println("Hello");
+	}
+}
+
+public class ThreadInJava {
+
+	public static void main(String[] args) {
+
+		A a = new A();
+		B b = new B();
+		a.show();
+		b.show();
+	}
+
+}

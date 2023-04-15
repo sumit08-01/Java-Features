@@ -1,0 +1,26 @@
+package com.core_java;
+
+public class String_Buffer_Builder {
+
+	public static void main(String[] args) {
+
+		//Question
+//		String name = new String();
+//		name = "sumit";
+//		String name1 = "sumit";
+//		System.out.println(name==name1);
+		
+		
+		//String -->> Imuttable
+//		String s = new String("sumit");
+//		String s1 = "sumit";
+//		System.out.println(s==s1);
+//		System.out.println(s.equals(s1));
+		
+		//String Buffer -->> Mutable
+		StringBuffer buffer = new StringBuffer("sumit");
+		StringBuffer bu = "sumit";
+		
+	}
+
+}

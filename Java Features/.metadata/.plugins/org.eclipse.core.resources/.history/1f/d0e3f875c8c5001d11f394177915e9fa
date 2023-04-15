@@ -1,0 +1,18 @@
+package com.core_java;
+
+public class TeranaryOperators {
+
+	public static void main(String[] args) {
+
+		long a = 3;
+		boolean b = a == 5 ? true : false;
+		System.out.println(b);
+		
+		
+		int t = 3;
+		int result = 0;
+		result = (t==3? result=10: result=20);
+		System.out.println(result);
+	}
+
+}

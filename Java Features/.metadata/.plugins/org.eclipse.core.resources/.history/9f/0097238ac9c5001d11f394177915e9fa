@@ -1,0 +1,23 @@
+package com.core_java;
+
+public class SwitvhExpresion {
+
+	public static void main(String[] args) {
+		String dayofweek = "";
+		int day = 1;
+		switch (day) {
+		case 1 : dayofweek = "Sunday"; break; 
+		case 2 : dayofweek = "Monday"; break; 
+		case 3 : dayofweek = "Tuesday"; break; 
+		case 4 : dayofweek = "Wednesday"; break; 
+		case 5 : dayofweek = "Thursday"; break; 
+		case 6 : dayofweek = "Friday"; break; 
+		case 7 : dayofweek = "Saturday"; break; 
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + day);
+		}
+		System.out.println(dayofweek);
+
+	}
+
+}

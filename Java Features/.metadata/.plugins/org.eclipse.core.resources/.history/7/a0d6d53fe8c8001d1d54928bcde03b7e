@@ -1,0 +1,25 @@
+package com.core_java;
+
+/**
+ * 
+ * @author sumit
+ *
+ *--> Functional interface have only one abstract method
+ */
+
+@FunctionalInterface
+interface FunctionalIn{
+	void show();
+//	void play();// if i uncommit this line it's giving me error saying it's not a functional interface
+}
+
+public class FunctionInterface_With_LambdaExpression {
+
+	public static void main(String[] args) {
+
+		FunctionalInterface fn = () -> {
+			System.out.println("show");
+		};
+		
+	}
+}

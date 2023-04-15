@@ -1,0 +1,51 @@
+Stream Api :-> 	A stream is a sequence of objects that supports various methods 
+				which can be pipelined to produce the desired result.
+This package consists of classes, interfaces and enum to allows functional-style operations on the elements. 
+You can use stream by importing java.util.stream package.
+
+Intermediate Operations : -> 1.Intermediate operations process the current stream of data (if any) and then return a new stream.
+							 2.An intermediate operation returns a new stream , they can be chained. 
+							 A stream can execute any number of intermediate operations, 
+							 which is termed stream chaining.
+							3.Intermediate operations are not executed until a terminal operation is performed.
+							4.return stream 
+Intermediate Operations:
+filter(Predicate<T>)
+peek(Consumer<T>)
+distinct()
+limit(long n)
+skip(long n)
+map(Function<T>)
+flatMap(Function<T>)
+sorted(Comparator<T>)
+
+							
+Terminal Operations : -> 1.Terminal operations as the name suggests are the last in the pipeline of operations performed on a stream.
+						 2.A stream can have only one terminal operation, it cannot be chained.
+						 3.Terminal operation is executed as and when it is invoked.
+						 4.return void and non-stream
+Terminal Operations:
+anyMatch()
+collect()
+findAny()
+forEach()
+allMatch()
+noneMatch()
+min()
+max()
+count()
+findFirst()
+toArray()
+reduce()
+forEachOrdered()
+
+
+Recap: Difference between Intermediate and Terminal Operations in Java
+Intermediate Operations									Terminal Operations
+
+Return Type	 stream	value 			or 							side-effect
+Chaining	Allowed												Not allowed
+Execution	Not executed until terminal operation is performed |	Executed as and when it is invoked
+Laziness	Always lazy											Eager except iterator() and spliterator()
+Number of operations	Zero or more							Exactly one
+Short circuiting operation examples-> limit()						findFirst(), findAny()

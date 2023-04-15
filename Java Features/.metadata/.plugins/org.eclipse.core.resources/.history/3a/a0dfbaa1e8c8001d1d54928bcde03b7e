@@ -1,0 +1,30 @@
+package com.core_java;
+
+/**
+ * 
+ * @author sumit
+ *
+ *--> Functional interface have only one abstract method
+ */
+
+@FunctionalInterface
+interface FunctionalIn{
+//	void show();
+	void show(int i, double j);
+//	void play();// if i uncommit this line it's giving me error saying it's not a functional interface
+}
+
+public class FunctionInterface_With_LambdaExpression {
+
+	public static void main(String[] args) {
+
+//		FunctionalIn fn = () -> 
+//			System.out.println("show");
+//		fn.show();
+		FunctionalIn fn = (i,j) -> 
+		System.out.println("show"+ i+ " : "+j);
+		fn.show(4,5.5);
+		
+		
+	}
+}

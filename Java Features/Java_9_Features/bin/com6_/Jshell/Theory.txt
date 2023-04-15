@@ -1,0 +1,34 @@
+Java Shell Tool (JShell) : -->> 
+	It is an interactive Java Shell tool, it allows us to execute Java code from the shell and shows output immediately. 
+	JShell is a REPL (Read Evaluate Print Loop) tool and run from the command line.
+	
+Advantages of JShell : -->> 
+
+		Jshell has reduced all the efforts that are required to run a Java program and test a business logic.
+		If we don't use Jshell, creating of Java program involves the following steps.
+			Open editor and write program
+			Save the program
+			Compile the program
+			Edit if any compile time error
+			Run the program
+			Edit if any runtime error
+			Repeat the process
+		Jshell does not require above steps. We can evaluate statements, 
+		methods and classes, even can write hello program without creating class.
+	
+How to start jshell --> 
+	To start Jshell, first we must have installed Java 9 then open terminal in Linux or command prompt in windows and type jshell ?v. 
+	It will start jshell session and displays a welcome message to the console.
+	
+Semicolon (;) is optional, we can leave it and it works fine. 
+Scratch Variables
+If we don't provide variable name, Java create implicit variable to store the value. These variables start with $ sign.
+
+
+
+
+
+
+
+
+	

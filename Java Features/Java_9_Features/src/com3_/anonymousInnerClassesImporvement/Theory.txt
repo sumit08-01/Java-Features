@@ -1,0 +1,9 @@
+Java 9 Anonymous Inner Classes Improvement: --> 
+	Java 9 introduced a new feature that allows us to use diamond operator with anonymous classes. 
+	Using the diamond with anonymous classes was not allowed in Java 7.
+	In Java 9, as long as the inferred type is denotable, 
+	we can use the diamond operator when we create an anonymous inner class.
+	Data types that can be written in Java program like int, String etc are called denotable types. 
+	Java 9 compiler is enough smart and now can infer type.
+	
+This feature is included to Java 9, to add type inference in anonymous inner classes.

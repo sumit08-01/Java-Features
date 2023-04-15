@@ -1,0 +1,29 @@
+Records Classes : It's introduced in java 14 but as preview and also in 15 
+					as a preview. In 16 it's standardized
+
+syntax -> 
+	record Person(String name, String email, String phoneNumber){}
+	keyword className(dataType variable,dataType variable, dataType varable){
+		by default it made for as 
+		1 -> public accessor methods 
+		2 -> getter and Setter 
+		3 -> constructor 
+		4 -> override equals method
+		5 -> override hashCode Method
+		6 -> override toString 
+		7 -> You can create custom implementations if you would want
+	}
+	
+
+-->> Getter Setter access by direct variable name not getName kr ke		
+-->> Compact Constructor are only allowed in Records Classes		
+-->> You can add static fields, static initializer, and static, methods		
+-->> But you cannot add instance variables or instance initializers
+					
+					
+					
+					
+					
+					
+					
+					

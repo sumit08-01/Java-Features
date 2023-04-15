@@ -1,0 +1,19 @@
+package com.core_java.exceptionhandling;
+
+public class FinallyBlock {
+
+	public static void main(String[] args) {
+
+		int i=0;
+		int j=0;
+		try {
+			j=18/i;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		finally { // it's used to close the resources
+			System.out.println("Get Lost finally block");
+		}
+	}
+
+}

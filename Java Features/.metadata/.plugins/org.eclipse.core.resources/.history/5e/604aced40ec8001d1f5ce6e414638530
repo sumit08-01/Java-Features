@@ -1,0 +1,52 @@
+package com.core_java;
+
+class Cal{
+	public int add(int a , int b) {
+		return a+b;
+	}
+	public int sub(int a , int b) {
+		return a-b;
+	}
+}
+class AddvanceCal extends Cal{
+	public int mul(int a , int b) {
+		return a*b;
+	}
+	
+	public int div(int a , int b) {
+		return a/b;
+	}
+}
+
+
+
+public class Inheratance_OOPS {
+
+	public static void main(String[] args) {
+		AddvanceCal addvanceCal = new AddvanceCal();
+		int mul = addvanceCal.mul(3, 4);
+		int div = addvanceCal.div(10, 5);
+		Cal cal = new Cal();
+		int add = cal.add(2, 4);
+		int sub = cal.sub(5, 4);
+		System.out.println("Add : "+ add + " Sub : "+ sub);
+//		cal.mul(3,5);// This line giving compile time error because mul method is not present in Cal Class That's why
+		System.out.println("Mul : "+ mul + " Div : "+ div);
+//		addvanceCal.add(3,5);// This line giving compile time error because add method is not present in AddvanceCal Class That's why
+		
+		// if you want to use one class properties to another class use can use extends keyword which is used to get properties of other class or parent class
+		int add2 = addvanceCal.add(3,5);// Now this line is not giving any error because it get the parent properties
+		System.out.println(add2);
+		
+//		cal.mul(3,5);// This line is give error also now should I do, We have to created reference of parent class which meant 
+						// it can store the object of it's self or child class which it was extended this class
+		
+		
+		Cal cal2 = new Cal();
+		Cal cal3 = new AddvanceCal();// like this this can store object of class which extend by this
+		cal3.add(4, 5);
+		cal3.mul(4, 5);
+		cal3.sub(4, 5);
+		cal3.div(4, 5);
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;Java_6_Features&apos; to &apos;Java_CommonQ&apos;&#x0D;&#x0A;- Original element: &apos;Java_6_Features&apos;&#x0D;&#x0A;- Renamed element: &apos;Java_6_Features&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;Java_6_Features&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=Java_6_Features" name="Java_CommonQ" references="true" stamp="1678473986040" version="1.0"/>
+</session>

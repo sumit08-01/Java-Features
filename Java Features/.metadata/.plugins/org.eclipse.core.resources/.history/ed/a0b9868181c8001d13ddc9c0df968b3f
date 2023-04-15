@@ -1,0 +1,34 @@
+package com.core_java;
+
+class Obj{
+	
+	int a ;
+	String s;
+	
+	@Override
+	public String toString() {
+		return a + " : "+ s;
+	}
+}
+
+public class ObjectClass {
+
+	public static void main(String[] args) {
+
+		Obj obj = new Obj();
+		obj.s="sumit";
+		obj.a = 12;
+		System.out.println(obj.toString());
+		/**
+		 * To String Return -->> return getClass().getName() + "@" + Integer.toHexString(hashCode());
+		 * 															Obj@626b2d4a
+		 * 
+		 */
+		
+		
+		
+		
+		//
+	}
+
+}

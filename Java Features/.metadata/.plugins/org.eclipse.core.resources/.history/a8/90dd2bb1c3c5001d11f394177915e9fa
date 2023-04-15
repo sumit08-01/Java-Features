@@ -1,0 +1,23 @@
+package com.core_java;
+
+public class LogicalOperators {
+
+	public static void main(String[] args) {
+
+		
+		//Or Operator
+//		if( 5 < 3 | 6 < 5) {
+//			System.out.println("OR Operator");
+//		}else {
+//			boolean b = false;
+//			System.out.println(b);
+//		}
+		if( 5 < 3 & 6 < 5) {
+			System.out.println("OR Operator");
+		}else {
+			boolean b = false;
+			System.out.println(b);
+		}
+	}
+
+}

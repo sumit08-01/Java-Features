@@ -1,0 +1,5 @@
+IDE -->> Stand for integrated Development Environment 
+How to send Path 
+steps : --> Search environment variable
+
+

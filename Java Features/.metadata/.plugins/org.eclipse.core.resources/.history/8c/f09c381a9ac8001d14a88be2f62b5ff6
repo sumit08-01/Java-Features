@@ -1,0 +1,15 @@
+package com.core_java;
+
+class AB{
+	public void show() {
+		System.out.println("Show of class AB");
+	}
+}
+
+public class InnerClasses {
+
+	public static void main(String[] args) {
+
+	}
+
+}

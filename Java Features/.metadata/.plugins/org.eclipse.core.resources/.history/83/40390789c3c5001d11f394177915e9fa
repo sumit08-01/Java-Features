@@ -1,0 +1,14 @@
+package com.core_java;
+
+public class LogicalOperators {
+
+	public static void main(String[] args) {
+
+		if( 5 < 3 | 6 > 5) {
+			System.out.println("OR Operator");
+		}
+		boolean b = false;
+		System.out.println(b);
+	}
+
+}

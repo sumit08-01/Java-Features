@@ -1,0 +1,20 @@
+Method Reference:-
+-->>Java provides a new feature called method reference in Java 8. 
+	Method reference is used to refer method of functional interface. 
+	It is compact and easy form of lambda expression.
+	
+There are following types of method references in java:
+
+1->Reference to a static method.
+
+syntex-->> ContainingClass::staticMethodName 
+
+
+2->Reference to an instance method.
+
+syntax-->> containingObject::instanceMethodName 
+
+3->Reference to a constructor.
+	You can refer a constructor by using the new keyword. 
+	Here, we are referring constructor with the help of functional interface.
+syntax-->>ClassName::new

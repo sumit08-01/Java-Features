@@ -1,0 +1,18 @@
+package com.core_java;
+
+
+class A {
+	
+	public A() {
+		System.out.println("non-parameterized");
+	}
+}
+
+public class Super_this_keyword extends A {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

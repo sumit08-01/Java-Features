@@ -1,0 +1,41 @@
+package com.core_java.thread;
+
+/**
+ * 
+ *
+ * @author sumit
+ * 
+ * Runnable is interface 
+ *
+ */
+class A implements Runnable{
+	public void run() {
+		for(int i=0; i<100; i++) {
+			System.out.println("Hii");
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}
+class B  implements Runnable{
+	public void run() {
+		for(int i=0; i<100; i++) {
+			System.out.println("Hello");
+		}
+	}
+}
+
+public class Runnable_Interface {
+
+	public static void main(String[] args) {
+
+		A a=new A();
+		B b = new B();
+		
+		a.run();b.run();
+	}
+
+}

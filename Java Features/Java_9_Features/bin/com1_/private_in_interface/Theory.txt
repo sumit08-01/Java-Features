@@ -1,0 +1,8 @@
+Java 9 Private Interface Methods:--> 
+
+	In Java 9, we can create private methods inside an interface. 
+	Interface allows us to declare private methods that help to share common code between non-abstract methods.
+	Before Java 9, creating private methods inside an interface cause a compile time error. 
+	The following example is compiled using Java 8 compiler and throws a compile time error.
+
+

@@ -1,0 +1,18 @@
+package com.core_java;
+
+/**
+ * 
+ * @author sumit
+ * 
+ * -->In interface by default all methods are public abstract,
+ * 	ex-> public abstract void show();
+ *
+ */
+
+public class Interface_In_Java {
+
+	public static void main(String[] args) {
+
+	}
+
+}

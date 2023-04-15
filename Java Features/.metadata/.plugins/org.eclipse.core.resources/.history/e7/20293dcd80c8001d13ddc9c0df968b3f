@@ -1,0 +1,17 @@
+package com.core_java;
+
+class Obj{
+	
+	int a ;
+	String s;
+}
+
+public class ObjectClass {
+
+	public static void main(String[] args) {
+
+		Obj obj = new Obj();
+		System.out.println(obj);
+	}
+
+}

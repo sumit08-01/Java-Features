@@ -1,0 +1,23 @@
+package com.core_java;
+
+class Employee{
+	String name;
+	int age;
+	
+	//Static Block
+	{
+		name = "sumit";
+		age = 21;
+	}
+}
+
+public class StaticKeyWord {
+
+	public static void main(String[] args) {
+		Employee employee = new Employee();
+		System.out.println(employee.name);
+		
+		
+	}
+
+}

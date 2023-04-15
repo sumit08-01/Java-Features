@@ -1,0 +1,14 @@
+writeString(): This is to write some content in a file.
+	jshell>Files.writeString(Path.of(example.txt), "SumitGond!");
+
+
+readString(): This is used to read the contents of a file.
+	jshell>Files.readString(Path.of(example.txt));
+	Output: "SumitGond!"
+
+isSameFile(): This method is used to know whether two paths locate the same file or not.
+	jshell>Files.isSameFile(Path.of("example1.txt"), Path.of("example1.txt"));
+	Output: true
+
+	jshell>Files.isSameFile(Path.of("example2.txt"), Path.of("example1.txt"));
+	Output: false

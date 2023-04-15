@@ -1,0 +1,30 @@
+String New Methods : ->
+
+1 -> isBlank() -->> This is a boolean method. It just returns true when a string is empty and vice-versa.
+	
+2 -> lines() -->>  This method is to return a collection of strings that are divided by line terminators.
+
+3 -> repeat(n) -->> Result is the concatenated string of original string repeated the number of times in the argument.
+
+4 -> stripLeading() -->>  It is used to remove the white space which is in front of the string
+
+5 -> stripTrailing() -->> It is used to remove the white space which is in the back of the string
+
+6 -> strip() -->> It is used to remove the white spaces which are in front and back of the string
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

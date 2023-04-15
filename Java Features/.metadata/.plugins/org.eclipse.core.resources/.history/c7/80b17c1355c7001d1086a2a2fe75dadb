@@ -1,0 +1,35 @@
+package com.core_java;
+
+
+class A {
+	
+	public A() {
+		System.out.println("non-parameterized A class");
+	}
+	public A(int a) {
+		System.out.println("non-parameterized A class class int value");
+	}
+	
+	
+}
+
+class B extends A {
+	
+	public B() {
+		super();
+		System.out.println("non-parameterized B class");
+	}
+	public B(int a) {
+		super();
+		System.out.println("non-parameterized B class int value");
+	}
+}
+
+public class Super_this_keyword{
+
+	public static void main(String[] args) {
+		B b = new B(5);
+		
+	}
+
+}
